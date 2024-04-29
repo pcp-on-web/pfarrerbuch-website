@@ -1,0 +1,67 @@
+/* index.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+.container > div {margin: 1em 0;}
+
+
+
+
+/* Suchfeld */
+
+#search-container {
+		margin: 1em 0;
+    display: flex;
+    width: 100%;
+}
+
+#search-input {
+		margin: 0;
+    flex: 1; /* Das Suchfeld nimmt den verfügbaren Platz ein */
+}
+
+#search-button {
+		margin-left: 1em;
+		padding: 0.5em;
+    flex-shrink: 0; /* Der Suchbutton wird nicht verkleinert */
+}
+
+
+/* Container für die gesamte Tabelle */
+#results, #counts {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Zeilen der Tabelle */
+.row {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+/* Kopfzeile */
+.header-row {
+    font-weight: bold;
+    background-color: #f0f0f0;
+}
+
+/* Zellen der Tabelle */
+.cell {
+    flex: 1;
+    padding: 8px;
+    border-right: 1px solid #ccc;
+}
+
+/* Letzte Zelle der Zeile */
+.cell:last-child {
+    border-right: none;
+}

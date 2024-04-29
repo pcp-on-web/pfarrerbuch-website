@@ -1,0 +1,28 @@
+/* Menü */
+
+#project-menu {
+	width: 100%;
+	margin-bottom: 1em;
+	background-color: #ccc; 
+}
+
+#project-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#project-menu ul li {
+    display: inline;
+}
+
+#project-menu ul li a {
+    display: inline-block;
+    padding: 10px 20px; /* Anpassen der Abstände */
+    text-decoration: none;
+    color: black; /* Farbe der Texte */
+}
+
+#project-menu ul li a:hover {
+    background-color: #f0f0f0; /* Hintergrundfarbe beim Überfahren */
+}

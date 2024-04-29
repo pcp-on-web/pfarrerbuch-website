@@ -1,4 +1,7 @@
 <?php
+if (isset($_GET['site'])) $site_name = $_GET['site'];
+else $site_name="index.html";
+
 include('har_config.php');
 
 $html = filter($jsonObjekt->entries[0]->response->content->text);;
@@ -29,8 +32,25 @@ $elementToModify = $dom->getElementById('c1082')->parentNode->parentNode->parent
 $elementToModify->nodeValue='';
 $elementToModify->setAttribute('class', 'container container--small margin-top-m');
 $elementToModify->appendChild($dom->createDocumentFragment());
-$file=file_get_contents('index.html');
+$file=file_get_contents($site_name);
+
+// Hinzufügen eines Projekt-Menüs
+
+$file = '<link rel="stylesheet" href="index.css">
+<div id="project-menu">
+	<ul>
+		<li><a href="/">Übersicht</a></li>
+		<li><a href="/suche/">Suche</a></li>
+		<li><a href="/#Mitwirkende">Mitwirkende</a></li>
+		<li><a href="/#Ergebnisse">Aktueller Stand</a></li>	
+	</ul>
+</div>
+'.$file;
+
+
 $elementToModify->appendChild($dom->createCDATASection($file));
+
+
 
 
 
@@ -43,7 +63,5 @@ $html=$dom->saveHTML();
 $html= str_replace('href="har_browser.php?target=#cookie" onclick="cookieman.show()"', 'href="#cookie" onclick="alert('."'".'Dies iste eine Projektseite und verwendet keine Cookies.'."'".')"', $html);
 echo $html;
 
-// Jetzt kannst du den HTML-String verwenden, z.B. ausgeben oder in eine Datei speichern
-//echo $html;
 ?>
 
