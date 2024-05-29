@@ -19,7 +19,7 @@ SELECT DISTINCT (count(?Resource) as ?Anzahl) WHERE {
 } 
 `;
 
-let endpoints=['https://meta-pfarrerbuch.evangelische-archive.de/meta-daten/kps/sparql','https://meta-pfarrerbuch.evangelische-archive.de/meta-daten/sachsen/sparql'];
+let endpoints=['https://meta-pfarrerbuch.evangelische-archive.de/meta-daten/kps/sparql','https://meta-pfarrerbuch.evangelische-archive.de/meta-daten/sachsen/sparql','https://meta-pfarrerbuch.evangelische-archive.de/meta-daten/brandenburg/sparql'];
 
 let result = '';
 
