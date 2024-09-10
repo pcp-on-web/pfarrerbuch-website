@@ -60,8 +60,10 @@ $elementToModify->appendChild($dom->createCDATASection($file));
 $dom->preserveWhiteSpace = false;
 $dom->formatOutput = true;
 $html=$dom->saveHTML();
+$html= str_replace('href="har_browser.php?target=projekte/"', 'href="https://www.evangelische-archive.de/projekte/"', $html);
 $html= str_replace('href="har_browser.php?target=#cookie" onclick="cookieman.show()"', 'href="#cookie" onclick="alert('."'".'Dies iste eine Projektseite und verwendet keine Cookies.'."'".')"', $html);
 echo $html;
+
 
 ?>
 
