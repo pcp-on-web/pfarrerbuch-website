@@ -42,7 +42,9 @@ $file = '<link rel="stylesheet" href="index.css">
 		<li><a href="/">Übersicht</a></li>
 		<li><a href="/suche/">Suche</a></li>
 		<li><a href="/#Mitwirkende">Mitwirkende</a></li>
-		<li><a href="/#Ergebnisse">Aktueller Stand</a></li>	
+		<li><a href="/#Ergebnisse">Aktueller Stand</a></li>
+		<li><a href="/#Ausblick">Ausblick</a></li>	
+		<li><a href="/#Veranstaltungen">Veranstaltungen</a></li>
 	</ul>
 </div>
 '.$file;

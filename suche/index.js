@@ -120,9 +120,15 @@ function displayTable(results,tableContainer) {
         const row = document.createElement("div");
         row.className = "row";
         headers.forEach(header => {
+
             const cell = document.createElement("div");
             cell.className = "cell";
-            cell.textContent = result[header].value;
+            if (result[header].type=='uri') {
+                cell.innerHTML = '<a href="'+result[header].value+'">'+result[header].value+'</a>';
+            }
+            else {
+                cell.textContent = result[header].value;
+            }
             row.appendChild(cell);
         });
         tableContainer.appendChild(row);
