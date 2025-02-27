@@ -26,3 +26,26 @@
 #project-menu ul li a:hover {
     background-color: #f0f0f0; /* Hintergrundfarbe beim Überfahren */
 }
+
+/* Allgemeines Layout */
+
+ 
+.content ul {
+  list-style-type: square; /* Standard-Kreis als Symbol */
+  list-style-position: inside;
+  color: black; /* Textfarbe */
+}
+
+.content ul li::marker {
+  color: purple; /* Lila Listensymbol */
+  font-size: 1.4em; /* Größer machen */
+}
+
+.content ul  ul {
+  list-style-type: square; /* Standard-Kreis als Symbol */
+  list-style-position: inside;
+    padding-left: 20px; /* Einrücken der untergeordneten Liste */
+}
+
+
+
