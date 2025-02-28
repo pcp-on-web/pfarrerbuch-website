@@ -22,13 +22,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dataset_reference = htmlspecialchars(($_POST['dataset_reference']));
     
     $index = date('YmdHis-').generateRandomString();
+    $file ='/data/submission-'.$index.'.txt';
 
     // Speichere die Daten in einer Datei oder Datenbank (im Beispiel speichern wir es in eine Datei)
     $fileContent = "Name: $name\nForschungseinrichtung: $institution\nEmail: $email\nProjektbeschreibung: $project_description\nBezug zum Datensatz: $dataset_reference\n---\n\n";
-    file_put_contents('.submission-'.$index.'.txt', $fileContent);
+    file_put_contents($file, $fileContent);
     
     
-    if ($content=file_get_contents('.submission-'.$index.'.txt')) {
+    if ($content=file_get_contents($file)) {
+    	
         echo "<p>Folgende Daten wurden erfolgreich übermittelt:</p>";
         echo '<textarea style="width: 100%" rows=5 readonly>'.$content.'</textarea>';
     } else {
