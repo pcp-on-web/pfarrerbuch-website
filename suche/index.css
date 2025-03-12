@@ -34,6 +34,22 @@ h1 {
   appearance: auto;
 }
 
+#filter-container input[type="radio"] {
+  border: initial;
+  -webkit-clip-path: none;
+  clip-path: none;
+  display: inline-block; /* oder inline, je nach Bedarf */
+  height: auto;
+  width: auto;
+  position: static; /* oder relative, je nach Layout */
+  overflow: visible;
+  white-space: normal;
+  margin: initial;
+  padding: initial;
+  top: auto;
+  left: auto;
+}
+
 #search-input {
 		margin: 0;
     flex: 1; /* Das Suchfeld nimmt den verfügbaren Platz ein */
