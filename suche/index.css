@@ -16,10 +16,18 @@ h1 {
 /* Suchfeld */
 
 #search-container {
-		margin: 1em 0;
+    margin: 1em 0;
     display: flex;
     width: 100%;
 }
+
+#filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 
 #search-input {
 		margin: 0;
