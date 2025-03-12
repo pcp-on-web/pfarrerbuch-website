@@ -34,20 +34,15 @@ h1 {
   appearance: auto;
 }
 
+#filter-container label {
+  padding: 2em;
+}
+
+
 #filter-container input[type="radio"] {
-  border: initial;
-  -webkit-clip-path: none;
-  clip-path: none;
-  display: inline-block; /* oder inline, je nach Bedarf */
   height: auto;
   width: auto;
-  position: static; /* oder relative, je nach Layout */
-  overflow: visible;
-  white-space: normal;
-  margin: initial;
-  padding: initial;
-  top: auto;
-  left: auto;
+  position: static;
 }
 
 #search-input {
