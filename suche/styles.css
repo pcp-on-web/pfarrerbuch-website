@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+}
+
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#filter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #adb5bd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.results .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #f8f9fa;
+    border: 1px solid #d3d9df;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.results .row.brandenburg {
+    background-color: #e9ecef;
+}
+.results .row.kps {
+  background-color: #a4bece63;
+}
+.results .row.sachsen {
+    background-color: #9ab0b7;
+}
+
+.cell {
+    width: 45%;
+    overflow-wrap: break-word;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap
+}
+
+
+.pagination .page {
+    margin: 0 5px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination .page:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+.pagination .page.active {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+
