@@ -105,6 +105,16 @@ h1 {
     border-top: 1px solid #ccc;
 }
 
+.row .cell:nth-child(2) {
+   flex: 0 0 70%; 
+   max-width: 80%;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+}
+
+
+
 /* Kopfzeile */
 .header-row {
     font-weight: bold;
