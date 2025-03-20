@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /meta-explorer/
+Disallow: /meta-daten/
+Disallow: /data/
