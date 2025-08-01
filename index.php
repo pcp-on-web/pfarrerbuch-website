@@ -32,6 +32,7 @@ $elementToModify = $dom->getElementById('c1082')->parentNode->parentNode->parent
 $elementToModify->nodeValue='';
 $elementToModify->setAttribute('class', 'container container--small margin-top-m');
 $elementToModify->appendChild($dom->createDocumentFragment());
+echo $site_name;
 $file=file_get_contents($site_name);
 
 // Hinzufügen eines Projekt-Menüs
