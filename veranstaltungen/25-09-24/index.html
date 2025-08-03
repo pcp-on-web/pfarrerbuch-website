@@ -1,5 +1,61 @@
-<div class="content">
+<style>
+.session > div {font-size: 1.4em;margin-top:0.4em;margin-bottom:0.4em;line-height:1.2em;}
+.session div:nth-child(1) {margin-bottom:0.2em;}
+.session div:nth-child(2) {margin-top:0;}
+.session p {margin-top:0.1em; margin-bottom:0.2em;}
+#call {margin: 2em 0;}
+#call > a {
+  bottom: 20px;
+  left: 20px;
+  background: purple;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+</style>
+<div class="content"">
 <h2>Repositorien-, Organisations- und projektübergreifende semantische Meta-Suche am Beispiel der Metadatenbank von Pfarrpersonen im deutschsprachigen Raum</h2>
+<h3>Im Rahmen der <a href="https://www.forge25.uni-rostock.de/" target="_blank">FORGE 2025 Konferenz</a> - Forschungsdaten in den Geisteswissenschaften</h3>
 <p>Universität Rostock, Mittwoch, 24.09.2025 12:30 - 16:00, Ort: SR 217</p>
-<p>Weitere Informationen in Kürze.</p>
+
+<p>Im Fokus des Workshops stehen verschiedene methodische Ansätze bei der Realisierung von Projekten zur Repositorien-, Organisations- und projektübergreifenden semantischen Meta-Suche, welche die Zusammenführung gleicher Ressourcen, die Sicherung der Datenqualität und die Bereitstellung von Werkzeugen in einer übergreifenden Infrastruktur adressieren.</p>
+
+<h3 id="top">Aufruf zur Workshop-Teilnahme / Call for Participation </h3>
+
+<p>Präsentieren Sie Ihre vorhandenen oder geplanten Meta-Such-Projekte im Rahmen der 2. Session des Workshops. Richten Sie diese an den drei Schichten Repository Layer, Application Layer und Research Interface Layer aus.</p>
+<p>Diskutiert werden sollen Herangehensweisen zur Zusammenführung gleicher Ressourcen, zur Sicherung der Datenqualität und zur Bereitstellung von Werkzeugen in einer übergreifenden Infrastruktur.</p>
+<p>Bitte kontaktieren Sie Thomas Riechert &lt;<a href="mailto:thomas.riechert@htwk-leipzig.de">thomas.riechert@htwk-leipzig.de</a>&gt;.</p>
+
+
+
+<h3>Ziele des Workshops</h3>
+
+<p>Aufbauend auf dem Heloise Common Research Modell (HCRM) des Heloise Forschungskonsortiums1 werden entlang der drei Schichten Repository Layer, Application Layer und Research Interface Layer, im Rahmen des Workshops mit Wissenschaftlerinnen und Wissenschaftlern verschiedene methodische Ansätze diskutiert. Adressiert werden dabei die Herangehensweisen bei der Zusammenführung gleicher Ressourcen, Sicherung der Datenqualität, und Bereitstellung von Werkzeugen in einer übergreifenden Infrastruktur. </p>
+
+<h3>Programm</h3>
+
+<div class="session"><div><u>Session 1</u> - 12:30-13:15</div><div>Vorstellung des  Projektes Metadatenbank von Pfarrpersonen im deutschsprachigen Raum</div>
+<p>Das Projekt Metadatenbank von Pfarrpersonen im deutschsprachigen Raum kann entlang des HCRM wie folgt beschrieben werden. Dabei werden die adressierten Herangehensweisen aufgezeigt. 
+<p><b>Research Interface Layer.</b> Die Meta-Suchmaschine bietet für Wissenschaftlerinnen und Wissenschaftler verschiedene Zugangsmethoden. Diese reichen von einer komplexen Darstellung zum <a href="https://meta-pfarrerbuch.evangelische-archive.de/meta-explorer/" target="_blank">Explorieren des gesamten Katalogs über Ressourcen</a> mittels des Werkzeugs <a href="https://ontexplorer.pcp-on-web.de/" target="_blank">OntoExplorer</a>, einem <a href="https://meta-pfarrerbuch.evangelische-archive.de/suche/" target="_blank">Recherche Interface</a> mittels Text-to-SPARQL-Interface für die natürlichsprachige Recherche bis hin zu verschiedenen <a href="https://meta-pfarrerbuch.evangelische-archive.de/meta-daten/" target="_blank">SPARQL-Endpunkten</a>.</p>
+<p><b>Application Layer.</b> Das Metapfarrerbuch wird als Semantische Datenbank im Resource Description Framework (RDF) realisiert. Aktuell werden im Projekt derzeit drei Datenbanken importiert. Eine Vierte ist in Bearbeitung. Alle vier Datenbanken liegen derzeit in einer Strukturierten Form vor. Der Import in die Suchmaschine erfolgt über Python-Skripte, welche in einer Jupyter-Notebook-Umgebung ausgeführt werden, und jederzeit auf die Ausgangsdaten angewandt werden können. 
+<p><b>Repository Layer.</b> Die aktuelle Meta-Suche beinhaltet initial die Datenbanken Pfarrerbuch Sachsen, Kirchenprovinz Sachsen, sowie  Pfarrerbuch Bradenburg.</p> 
+</div>
+<div class="session"><div><u>Session 2</u> - 13:30-14:00 und 14:30-15:00</div><div>Existierende und geplanten Meta-Such-Projekte</div>
+<p>Im Rahmen der zweiten Session des Workshops, stellen die Workshopteilnehmerinnen und -teilnehmer ihre existierenden bzw. geplanten Meta-Such-Projekte vor. Analog zur ersten Session werden die Projekte so präsentiert, dass sie an das Schichtenmodell des HCRM angeglichen werden, um eine Vergleichbarkeit der Projekte und deren methodischen Ansätze zu ermöglichen, und zu diskutieren.
+Es ist zu erwarten, dass in diesen Projekten etablierte Plattformen wie u.a. Geovistory, Nodegoat oder die Prosopographische Forschungsplattform Österreichs eingesetzt werden, welche verschiedene Vokabulare und Normdaten, wie z.B. das CIDOC Conceptual Reference Model (CRM) oder die Gemeinsame Normdatei (GND) der Deutschen Nationalbibliothek, anwenden.</p>
+</p>
+</div>
+<p id="call"><a href="#top">Aufruf zur Workshop-Teilnahme</a></p>
+
+<div class="session"><div><u>Session 3</u> - 15:15-16:00</div><div>Zusammenfassung und Ausblick</div>
+<p>Im Ergebnis des Workshops soll eine gemeinsames Positionspapier geplant werden, welches denn aktuellen Stand der vorgestellten Projekte aufzeigt und diese bezüglich ausgewählter methodischer Aspekte der Repositorien-, Organisations- und projektübergreifenden Zusammenarbeit mit Forschungsdaten vergleicht.
+</p>
+</div>
+
+<h3>Organisation</h3>
+
+<p>Der Workshop wird von den Mitgliedern der Arbeitsgruppe Meta-Pfarrerbuch des Verbandes kirchlicher Archive in der Arbeitsgemeinschaft der Archive und Bibliotheken in der evangelischen Kirche in Deutschland organisiert und durchgeführt.</p>
 
